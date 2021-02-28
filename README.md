@@ -91,4 +91,4 @@ elements.
 
 ## Example Site
 
-See an [example](https://github.io/hikir1/ImgJust/example-site).
+See an [example](https://hikir1.github.io/ImgJust/example-site/index.html).
