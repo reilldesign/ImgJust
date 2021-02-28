@@ -140,8 +140,8 @@ class ImgJust {
 		container.style.paddingRight = this.paddingRight + "px";
 
 		this.addImages(imgs);
+		this.reload()
 
-		addEventListener("load", _ => this.reload());
 		addEventListener("resize", _ => this.reload());
 	}
 }
