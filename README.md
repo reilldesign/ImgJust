@@ -64,6 +64,9 @@ property to `scroll` so that the width of the ImgJust
 container doesn't change after being rendered.*
 
 ```css
+:root {
+  overflow-y: scroll;
+}
 .imgjust {
   background: red;
 }
@@ -88,6 +91,7 @@ elements.
   </a>
   ...
 </div>
+```
 
 ## Example Site
 
