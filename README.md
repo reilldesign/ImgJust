@@ -1,3 +1,5 @@
+# ImgJust
+## Justified Image Wall Generator
 Use ImgJust to create a wall of images on your website.
 It's based on the LaTex paragraph justifying algorithm.
 Images are scaled while maintaing their aspect ratios.
@@ -21,7 +23,7 @@ Include the source code in your web page:
 
 Once the page has loaded, use the ImgJust constructor,
 passing in the container for the wall, an array
-of HTMLImage objects, and an optional options object:
+of HTMLImageElement objects, and an optional options object:
 ```js
 addEventListener("load", _ => {
   const container = document.querySelector(".imgjust");
@@ -45,8 +47,39 @@ addEventListener("load", _ => {
 - paddingBottom = 0
 
 ## ImgJust Public Methods
+
 - `constructor(container, imgs=[], options={})`
 - `reload()`
 - `addImages(imgs)`
 
 ## Styling
+
+Style the components normally using CSS.
+*Note: if adding space, make sure to account for
+it by changing the above mentioned padding and gap options.*
+
+```css
+.imgjust {
+  background: red;
+}
+.imgjust img {
+  border: 1px solid black;
+}
+```
+
+## Nested Elements
+
+The DOM is not altered in any way,
+so images can safely be placed in other
+elements.
+
+```html
+<div class="imgjust">
+  <a href="larger-img-1.jpg">
+    <img src="icon-1.jpg">
+  </a>
+  <a href="larger-img-2.jpg">
+    <img src="icon-2.jpg">
+  </a>
+  ...
+</div>
