@@ -55,8 +55,13 @@ addEventListener("load", _ => {
 ## Styling
 
 Style the components normally using CSS.
+
 *Note: if adding space, make sure to account for
 it by changing the above mentioned padding and gap options.*
+
+*Another Note: You may want to set the root `overflow-y`
+property to `scroll` so that the width of the ImgJust
+container doesn't change after being rendered.*
 
 ```css
 .imgjust {
@@ -83,3 +88,7 @@ elements.
   </a>
   ...
 </div>
+
+## Example Site
+
+See an [example](https://github.io/hikir1/ImgJust/example-site).
