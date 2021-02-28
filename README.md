@@ -35,18 +35,18 @@ addEventListener("load", _ => {
 
 ## Options & Defaults
 
-idealHeight: 150
-maxRowImgs = 16
-rowGap = 0
-columnGap = 0
-paddingLeft = 0
-paddingRight = 0
-paddingTop = 0
-paddingBottom = 0
+- idealHeight: 150
+- maxRowImgs = 16
+- rowGap = 0
+- columnGap = 0
+- paddingLeft = 0
+- paddingRight = 0
+- paddingTop = 0
+- paddingBottom = 0
 
 ## ImgJust Public Methods
-constructor(container, imgs=[], options={})
-reload()
-addImages(imgs)
+- `constructor(container, imgs=[], options={})`
+- `reload()`
+- `addImages(imgs)`
 
 ## Styling
