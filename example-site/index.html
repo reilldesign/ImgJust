@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ImgJust Example</title>
+	<script src="../imgjust.js"></script>
+	<style>
+		:root {
+			overflow-y: scroll;
+		}
+		ul {
+			list-style: none;
+			background: cornflowerblue;
+		}
+		body {
+			padding: 32px;
+			text-align: center;
+		}
+		header {
+			margin-bottom: 32px;
+		}
+
+	</style>
+	<script>
+		addEventListener("load", _ => {
+			const container = document.querySelector("ul");
+			const imgs = document.querySelectorAll("img");
+			new ImgJust(container, imgs, {
+				idealHeight: 150,
+				columnGap: 4,
+				rowGap: 4,
+				paddingTop: 32,
+				paddingBottom: 32,
+				paddingLeft: 32,
+				paddingRight: 32,
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<h1>ImgJust Example</h1>
+		<h2>Create a justified image wall for your website!</h2>
+	</header>
+	<ul>
+		<li>
+			<a href="imgs/image01.jpg">
+				<img src="imgs/image01.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="imgs/image02.jpg">
+				<img src="imgs/image02.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="imgs/image03.jpg">
+				<img src="imgs/image03.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="imgs/image04.jpg">
+				<img src="imgs/image04.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="imgs/image05.jpg">
+				<img src="imgs/image05.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="imgs/image06.jpg">
+				<img src="imgs/image06.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="imgs/image07.jpg">
+				<img src="imgs/image07.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="imgs/image08.jpg">
+				<img src="imgs/image08.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="imgs/image09.jpg">
+				<img src="imgs/image09.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="imgs/image10.jpg">
+				<img src="imgs/image10.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="imgs/image11.jpg">
+				<img src="imgs/image11.jpg">
+			</a>
+		</li>
+		<li>
+			<a href="imgs/image12.jpg">
+				<img src="imgs/image12.jpg">
+			</a>
+		</li>
+	</ul>
+</body>
+</head>
