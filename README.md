@@ -30,9 +30,9 @@ addEventListener("load", _ => {
   const imgs = document.querySelectorAll(".imgjust img");
   const options = {
     idealHeight: 150,
-  }
+  };
   const imgjust = new ImgJust(container, imgs, options);
-}
+});
 ```
 
 ## Options & Defaults
