@@ -111,7 +111,7 @@ class ImgJust {
 			imgs[range.end].style.marginRight = "0";
 		}
 		const lastRange = rowRanges[rowRanges.length - 1];
-		for (var i = lastRange.start; i <= lastRange; i++)
+		for (var i = lastRange.start; i <= lastRange.end; i++)
 			imgs[i].style.marginBottom = "0";
 	}
 	addImages(imgs) {
