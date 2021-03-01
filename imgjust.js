@@ -109,12 +109,10 @@ class ImgJust {
 			imgs[range.end].style.width = containerWidth - newRowWidth + "px";
 			imgs[range.end].style.height = newHeight + "px";
 			imgs[range.end].style.marginRight = "0";
-			console.log(newRowWidth + imgs[range.end].width);
 		}
 		const lastRange = rowRanges[rowRanges.length - 1];
 		for (var i = lastRange.start; i <= lastRange; i++)
 			imgs[i].style.marginBottom = "0";
-		console.log("supposed to be:", containerWidth);
 	}
 	addImages(imgs) {
 		for (const img of imgs) {
