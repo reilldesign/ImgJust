@@ -92,15 +92,16 @@ class ImgJust {
 
 		// Format images
 		for (var range of rowRanges) {
-			var rowWidth = 0;
+			var totalImgWidth = 0;
 			for (var i = range.start; i <= range.end; i++) {
-				rowWidth += idealImgWidths[i];
+				totalImgWidth += idealImgWidths[i];
 				imgs[i].style.marginBottom = this.rowGap + "px";
 			}
-			const newHeight = Math.round(this.idealHeight * containerWidth / rowWidth);
+			const containerWidthSpace = containerWidth - (range.end - range.start)*this.columnGap;
+			const newHeight = Math.round(this.idealHeight * containerWidthSpace / totalImgWidth);
 			var newRowWidth = 0;
 			for (var i = range.start; i < range.end; i++) {
-				const newWidth = Math.round(idealImgWidths[i] * containerWidth / rowWidth);
+				const newWidth = Math.round(idealImgWidths[i] * containerWidthSpace / totalImgWidth);
 				newRowWidth += newWidth + this.columnGap;
 				imgs[i].style.width = newWidth + "px";
 				imgs[i].style.height = newHeight + "px";
