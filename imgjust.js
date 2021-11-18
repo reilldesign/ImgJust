@@ -114,10 +114,14 @@ class ImgJust {
 		const lastRange = rowRanges[rowRanges.length - 1];
 		for (var i = lastRange.start; i <= lastRange.end; i++)
 			imgs[i].style.marginBottom = "0";
+
+		// All done. Now make visible.
+		for (const img of imgs)
+			img.style.display = "block";
 	}
 	addImages(imgs) {
 		for (const img of imgs) {
-			img.style.display = "block";
+			img.style.display = "none";
 			this.imgs.push(img);
 		}
 	}
